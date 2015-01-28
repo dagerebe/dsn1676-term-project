@@ -29,6 +29,134 @@ body {
 	height: 100vh;
 }
 
-.over {
-	width: 150%;
+.cloud-bunch {
+	position: relative;
 }
+
+.cloud-1 {
+	position: absolute;
+	width: 50%;
+	top: .5em;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.cloud-2 {
+	position: absolute;
+	width: 50%;
+	right: 0;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.cloud-3 {
+	position: absolute;
+	width: 50%;
+	left: 30%;
+	top: 1em;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
+.cloud-b-1 {
+	position: absolute;
+	width: 25%;
+	top: .8em;
+	z-index: 3;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.cloud-b-2 {
+	position: absolute;
+	width: 25%;
+	left: 15%;
+	z-index: 4;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.cloud-b-3 {
+	position: absolute;
+	width: 25%;
+	left: 30%;
+	top: 1.5em;
+	z-index: 6;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
+.cloud-b-4 {
+	position: absolute;
+	width: 25%;
+	right: 34%;
+	z-index: 5;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.cloud-b-5 {
+	position: absolute;
+	width: 25%;
+	right: 17%;
+	top: 1em;
+	z-index: 2;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.cloud-b-6 {
+	position: absolute;
+	width: 25%;
+	right: 0;
+	z-index: 1;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
+@keyframes cloud-1 {
+
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(5px);
+	}
+
+}
+
+@keyframes cloud-2 {
+
+	0% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+
+}
+
+@keyframes cloud-3 {
+
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(5px);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
