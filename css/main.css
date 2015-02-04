@@ -33,6 +33,7 @@ img {
 	position: relative;
 	background-color: rgba(27, 74, 76, 1);
 	height: 100vh;
+	overflow: hidden;
 	transition: all 1000ms;
 	-webkit-animation: back 2s ease-in-out infinite alternate;
 	animation: back 2s ease-in-out infinite alternate;
@@ -247,8 +248,13 @@ img {
 }
 
 .earth {
-	height: 50em;
-	background-image: url(..img/earth.svg);
+	position: absolute;
+	left: -10%;
+	bottom: 0;
+	height: 100px;
+	width: 120%;
+	background-image: url(../img/earth.svg);
+	background-repeat: repeat-x;
 	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
   	-webkit-transform-origin: bottom center;
