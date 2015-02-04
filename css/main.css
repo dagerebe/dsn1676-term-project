@@ -140,52 +140,52 @@ body {
 
 .light-b-1 {
 	position: absolute;
-	width: 10%;
-	top: .8em;
-	z-index: 3;
-	animation: cloud-1 2s ease-in-out infinite alternate;
+	width: 8%;
+	top: 2.3em;
+	left: 7%;
+	animation: light-1 2s ease-in-out infinite alternate;
 }
 
 .light-b-2 {
 	position: absolute;
-	width: 10%;
-	left: 15%;
+	width: 8%;
+	top: 1em;
+	left: 25%;
 	z-index: 4;
-	animation: cloud-2 2s ease-in-out infinite alternate;
+	animation: light-2 2s ease-in-out infinite alternate;
 }
 
 .light-b-3 {
 	position: absolute;
-	width: 10%;
-	left: 30%;
-	top: 1.5em;
-	z-index: 6;
-	animation: cloud-3 3s ease-in-out infinite alternate;
+	width: 8%;
+	left: 38%;
+	top: 2.5em;
+	animation: light-3 3s ease-in-out infinite alternate;
 }
 
 .light-b-4 {
 	position: absolute;
-	width: 10%;
-	right: 34%;
+	width: 8%;
+	top: 1.5em;
+	right: 44%;
 	z-index: 5;
-	animation: cloud-1 2s ease-in-out infinite alternate;
+	animation: light-1 2s ease-in-out infinite alternate;
 }
 
 .light-b-5 {
 	position: absolute;
-	width: 10%;
-	right: 17%;
-	top: 1em;
-	z-index: 2;
-	animation: cloud-2 2s ease-in-out infinite alternate;
+	width: 8%;
+	right: 24%;
+	top: 1.8em;
+	animation: light-2 2s ease-in-out infinite alternate;
 }
 
 .light-b-6 {
 	position: absolute;
-	width: 10%;
-	right: 0;
-	z-index: 1;
-	animation: cloud-3 3s ease-in-out infinite alternate;
+	width: 8%;
+	top: 1em;
+	right: 8%;
+	animation: light-3 3s ease-in-out infinite alternate;
 }
 
 .arrow {
