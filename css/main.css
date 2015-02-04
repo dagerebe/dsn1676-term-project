@@ -207,24 +207,38 @@ img {
 }
 
 .title {
-	margin-top: 50%;
+	margin-top: 55%;
 	margin-bottom: 50%;
     margin-left: auto;
     margin-right: auto;
     animation: title-light 2s ease-in-out infinite alternate;
 }
 
-.earth {
+.earth-s-m {
 	position: absolute;
-	width: 150%;
-	bottom: -3em;
+	width: 120%;
+	bottom: -1em;
 	left: -2em;
 	transform: rotate(-3deg);
   	transition: all 500ms linear;
   	transform-origin: bottom center;
 }
 
-.earth:hover {
+.earth-s-m:hover {
+	transform: rotate(3deg);
+}
+
+.earth-l-xl {
+	position: absolute;
+	width: 110%;
+	bottom: -1em;
+	left: -2em;
+	transform: rotate(-3deg);
+  	transition: all 500ms linear;
+  	transform-origin: bottom center;
+}
+
+.earth-l-xl:hover {
 	transform: rotate(3deg);
 }
 
@@ -234,6 +248,13 @@ img {
    	bottom: 4em;
    	width: 4em;
    	margin-left: -2em;
+   	transform: translateY(-5px);
+  	transition: all 1s linear;
+  	transform-origin: bottom center;
+}
+
+.arrow:hover {
+	transform: translateY(10px);
 }
 
 @keyframes back {
@@ -458,7 +479,13 @@ img {
 	}
 
 	.title {
+		margin-top: 32%;
+		width: 90%
+	}
 
+	.earth-s-m {
+		bottom: -6em;
+		left: -2em;
 	}
 
 }
@@ -466,7 +493,14 @@ img {
 @media only screen and (min-width: 38em) {
 
 	.title {
+		margin-top: 28%;
+		width: 70%;
+	}
 
+	.earth-l-xl {
+		width: 220%;
+		bottom: -1em;
+		left: -25em;
 	}
 
 }
@@ -474,7 +508,14 @@ img {
 @media only screen and (min-width: 60em) {
 
 	.title {
+		margin-top: 20%;
+		width: 50%;
+	}
 
+	.earth-l-xl {
+		width: 150%;
+		bottom: -1em;
+		left: -10em;
 	}
 
 }
