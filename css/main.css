@@ -30,8 +30,16 @@ img {
 }
 
 .head-bg {
-	background-color: #3A9BA5;
+	position: relative;
+	background-color: rgba(27, 74, 76, 1);
 	height: 100vh;
+	transition: all 1000ms;
+	animation: back 2s ease-in-out infinite alternate;
+}
+
+.head-bg:hover {
+	background-color: rgba(27, 74, 76, 1);
+	animation: solid infinite;
 }
 
 .toggle {
@@ -203,13 +211,71 @@ img {
 	margin-bottom: 50%;
     margin-left: auto;
     margin-right: auto;
-    animation: light-3 3s ease-in-out infinite alternate;
+    animation: title-light 3s ease-in-out infinite alternate;
 }
 
 .arrow {
 	width: 20%;
 	position: absolute;
-	bottom: 2em;
+	bottom: 8em;
+}
+
+.earth {
+	position: absolute;
+	width: 150%;
+	bottom: -1em;
+	left: -2em;
+	transform: rotate(-5deg);
+  	transition: all 1s linear;
+  	transform-origin: bottom center;
+}
+
+.earth:hover {
+	transform: rotate(5deg);
+}
+
+@keyframes back {
+
+	0% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	15% {
+		background-color: rgba(27, 74, 76, .8);
+	}
+
+	30% {
+		background-color: rgba(27, 74, 76, .4);
+	}
+
+	45% {
+		background-color: rgba(27, 74, 76, .6);
+	}
+
+	60% {
+		background-color: rgba(27, 74, 76, .4);
+	}
+
+	75% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	100% {
+		background-color: rgba(27, 74, 76, .4);
+	}
+
+}
+
+@keyframes solid {
+
+	0% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	100% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
 }
 
 @keyframes cloud-1 {
@@ -252,23 +318,27 @@ img {
 
 	0% {
 		transform: translateX(0px);
-		opacity: 0;
-	}
-
-	20% {
-		opacity: .8;
-	}
-
-	40% {
-		opacity: 0;
-	}
-
-	60% {
 		opacity: 1;
 	}
 
-	80% {
+	15% {
+		opacity: .4;
+	}
+
+	30% {
 		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
 	}
 
 	100% {
@@ -285,20 +355,24 @@ img {
 		opacity: 1;
 	}
 
-	20% {
+	15% {
 		opacity: .4;
 	}
 
-	40% {
+	30% {
 		opacity: 0;
 	}
 
-	60% {
+	45% {
 		opacity: .2;
 	}
 
-	80% {
-		opacity: .6;
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
 	}
 
 	100% {
@@ -337,6 +411,24 @@ img {
 
 	100% {
 		transform: translateX(5px);
+		opacity: 0;
+	}
+
+}
+
+@keyframes title-light {
+
+	0% {
+		opacity: 1;
+	}
+
+
+	50% {
+		opacity: .2;
+	}
+
+
+	100% {
 		opacity: 0;
 	}
 
