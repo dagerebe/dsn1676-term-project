@@ -246,8 +246,9 @@ img {
 	animation: rain 1s ease-in-out infinite alternate;
 }
 
+/*
 .earth {
-	height: 10em;
+	height: 50em;
 	background-image: url(..img/earth.svg);
 	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
@@ -259,20 +260,22 @@ img {
 	transform: rotate(3deg);
 }
 
+*/
+
 .arrow {
 	position: absolute;
    	left: 50%;
    	bottom: 4em;
    	width: 4em;
    	margin-left: -2em;
-   	-webkit-transform: translateY(-5px);
+   	-webkit-transform: translateY(-10px);
   	transition: all 1s linear;
   	-webkit-transform-origin: bottom center;
 }
 
 .arrow:hover {
 	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
+	transform: translateY(15px);
 }
 
 @-webkit-keyframes back {
