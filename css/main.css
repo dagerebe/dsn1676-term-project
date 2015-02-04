@@ -86,7 +86,7 @@ img {
 	width: 25%;
 	top: .8em;
 	z-index: 300;
-	animation: cloud-1 2s ease-in-out infinite alternate;
+	-webkit-animation: cloud-1 2s ease-in-out infinite alternate;
 	animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
@@ -240,13 +240,13 @@ img {
 	width: 120%;
 	bottom: -1em;
 	left: -2em;
-	transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
   	transform-origin: bottom center;
 }
 
 .earth-s-m:hover {
-	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
 }
 
 .earth-l-xl {
@@ -254,13 +254,13 @@ img {
 	width: 110%;
 	bottom: -1em;
 	left: -2em;
-	transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
   	transform-origin: bottom center;
 }
 
 .earth-l-xl:hover {
-	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
 }
 
 .arrow {
@@ -269,13 +269,13 @@ img {
    	bottom: 4em;
    	width: 4em;
    	margin-left: -2em;
-   	transform: translateY(-5px);
+   	-webkit-transform: translateY(-5px);
   	transition: all 1s linear;
   	transform-origin: bottom center;
 }
 
 .arrow:hover {
-	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
 }
 
 @-webkit-keyframes back {
