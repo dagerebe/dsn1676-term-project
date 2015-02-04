@@ -153,7 +153,7 @@ img {
 	width: 14%;
 	left: 50%;
 	top: 2em;
-	animation: light-3 3s ease-in-out infinite alternate;
+	animation: light-3 2s ease-in-out infinite alternate;
 }
 
 .light-b-1 {
@@ -211,33 +211,35 @@ img {
 	margin-bottom: 50%;
     margin-left: auto;
     margin-right: auto;
-    animation: title-light 3s ease-in-out infinite alternate;
-}
-
-.arrow {
-	width: 20%;
-	position: absolute;
-	bottom: 8em;
+    animation: title-light 2s ease-in-out infinite alternate;
 }
 
 .earth {
 	position: absolute;
 	width: 150%;
-	bottom: -1em;
+	bottom: -3em;
 	left: -2em;
-	transform: rotate(-5deg);
-  	transition: all 1s linear;
+	transform: rotate(-3deg);
+  	transition: all 500ms linear;
   	transform-origin: bottom center;
 }
 
 .earth:hover {
-	transform: rotate(5deg);
+	transform: rotate(3deg);
+}
+
+.arrow {
+	position: absolute;
+   	left: 50%;
+   	bottom: 4em;
+   	width: 4em;
+   	margin-left: -2em;
 }
 
 @keyframes back {
 
 	0% {
-		background-color: rgba(27, 74, 76, 1);
+		background-color: rgba(27, 74, 76, .4);
 	}
 
 	15% {
@@ -245,23 +247,23 @@ img {
 	}
 
 	30% {
-		background-color: rgba(27, 74, 76, .4);
-	}
-
-	45% {
-		background-color: rgba(27, 74, 76, .6);
-	}
-
-	60% {
-		background-color: rgba(27, 74, 76, .4);
-	}
-
-	75% {
 		background-color: rgba(27, 74, 76, 1);
 	}
 
-	100% {
+	45% {
+		background-color: rgba(27, 74, 76, .8);
+	}
+
+	60% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	75% {
 		background-color: rgba(27, 74, 76, .4);
+	}
+
+	100% {
+		background-color: rgba(27, 74, 76, 1);
 	}
 
 }
@@ -422,11 +424,25 @@ img {
 		opacity: 1;
 	}
 
+	15% {
+		opacity: .4;
+	}
 
-	50% {
+	30% {
+		opacity: 0;
+	}
+
+	45% {
 		opacity: .2;
 	}
 
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
 
 	100% {
 		opacity: 0;
