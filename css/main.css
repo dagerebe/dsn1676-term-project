@@ -105,6 +105,83 @@ body {
 	animation: cloud-3 3s ease-in-out infinite alternate;
 }
 
+.light-bunch {
+	position: relative;
+}
+
+.light-1 {
+	position: absolute;
+	fill: yellow;
+	width: 20%;
+	top: .5em;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.light-2 {
+	position: absolute;
+	width: 20%;
+	right: 0;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.light-3 {
+	position: absolute;
+	width: 20%;
+	left: 30%;
+	top: 1em;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
+.light-b-1 {
+	position: absolute;
+	width: 10%;
+	top: .8em;
+	z-index: 3;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.light-b-2 {
+	position: absolute;
+	width: 10%;
+	left: 15%;
+	z-index: 4;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.light-b-3 {
+	position: absolute;
+	width: 10%;
+	left: 30%;
+	top: 1.5em;
+	z-index: 6;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
+.light-b-4 {
+	position: absolute;
+	width: 10%;
+	right: 34%;
+	z-index: 5;
+	animation: cloud-1 2s ease-in-out infinite alternate;
+}
+
+.light-b-5 {
+	position: absolute;
+	width: 10%;
+	right: 17%;
+	top: 1em;
+	z-index: 2;
+	animation: cloud-2 2s ease-in-out infinite alternate;
+}
+
+.light-b-6 {
+	position: absolute;
+	width: 10%;
+	right: 0;
+	z-index: 1;
+	animation: cloud-3 3s ease-in-out infinite alternate;
+}
+
 @keyframes cloud-1 {
 
 	0% {
@@ -137,6 +214,18 @@ body {
 
 	100% {
 		transform: translateX(5px);
+	}
+
+}
+
+@keyframes light-1 {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 
 }
