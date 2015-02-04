@@ -278,6 +278,220 @@ img {
 	transform: translateY(10px);
 }
 
+@-webkit-keyframes back {
+
+	0% {
+		background-color: rgba(27, 74, 76, .4);
+	}
+
+	15% {
+		background-color: rgba(27, 74, 76, .8);
+	}
+
+	30% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	45% {
+		background-color: rgba(27, 74, 76, .8);
+	}
+
+	60% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	75% {
+		background-color: rgba(27, 74, 76, .4);
+	}
+
+	100% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+}
+
+@-webkit-keyframes solid {
+
+	0% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+	100% {
+		background-color: rgba(27, 74, 76, 1);
+	}
+
+}
+
+@-webkit-keyframes cloud-1 {
+
+	0% {
+		-webkit-transform: translateX(0px);
+	}
+
+	100% {
+		-webkit-transform: translateX(5px);
+	}
+
+}
+
+@-webkit-keyframes cloud-2 {
+
+	0% {
+		-webkit-transform: translateX(5px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+	}
+
+}
+
+@-webkit-keyframes cloud-3 {
+
+	0% {
+		-webkit-transform: translateX(0px);
+	}
+
+	100% {
+		-webkit-transform: translateX(5px);
+	}
+
+}
+
+@-webkit-keyframes light-1 {
+
+	0% {
+		-webkit-transform: translateX(0px);
+		opacity: 1;
+	}
+
+	15% {
+		opacity: .4;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
+
+	100% {
+		-webkit-transform: translateX(5px);
+		opacity: 0;
+	}
+
+}
+
+@-webkit-keyframes light-2 {
+
+	0% {
+		-webkit-transform: translateX(5px);
+		opacity: 1;
+	}
+
+	15% {
+		opacity: .4;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		opacity: 0;
+	}
+
+}
+
+@-webkit-keyframes light-3 {
+
+	0% {
+		-webkit-transform: translateX(0px);
+		opacity: 1;
+	}
+
+	15% {
+		opacity: .4;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
+
+	100% {
+		-webkit-transform: translateX(5px);
+		opacity: 0;
+	}
+
+}
+
+@-webkit-keyframes title-light {
+
+	0% {
+		opacity: 1;
+	}
+
+	15% {
+		opacity: .4;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 0;
+	}
+
+}
+
 @keyframes back {
 
 	0% {
