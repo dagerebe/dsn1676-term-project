@@ -508,34 +508,14 @@ img {
 @media only screen and (min-width: 60em) {
 
 	.title {
-		margin-top: 20%;
+		margin-top: 13%;
 		width: 50%;
 	}
 
 	.earth-l-xl {
 		width: 150%;
-		bottom: -1em;
+		bottom: -2em;
 		left: -10em;
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
