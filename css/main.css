@@ -34,11 +34,13 @@ img {
 	background-color: rgba(27, 74, 76, 1);
 	height: 100vh;
 	transition: all 1000ms;
+	-webkit-animation: back 2s ease-in-out infinite alternate;
 	animation: back 2s ease-in-out infinite alternate;
 }
 
 .head-bg:hover {
 	background-color: rgba(27, 74, 76, 1);
+	-webkit-animation: solid infinite;
 	animation: solid infinite;
 }
 
@@ -56,6 +58,7 @@ img {
 	width: 50%;
 	top: .5em;
 	z-index: 100;
+	-webkit-animation: cloud-1 2s ease-in-out infinite alternate;
 	animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
@@ -64,6 +67,7 @@ img {
 	width: 50%;
 	right: 0;
 	z-index: 100;
+	-webkit-animation: cloud-2 2s ease-in-out infinite alternate;
 	animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
@@ -73,6 +77,7 @@ img {
 	left: 30%;
 	top: 1em;
 	z-index: 100;
+	-webkit-animation: cloud-3 3s ease-in-out infinite alternate;
 	animation: cloud-3 3s ease-in-out infinite alternate;
 }
 
@@ -82,6 +87,7 @@ img {
 	top: .8em;
 	z-index: 300;
 	animation: cloud-1 2s ease-in-out infinite alternate;
+	animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
 .cloud-b-2 {
@@ -89,6 +95,7 @@ img {
 	width: 25%;
 	left: 15%;
 	z-index: 400;
+	-webkit-animation: cloud-2 2s ease-in-out infinite alternate;
 	animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
@@ -98,6 +105,7 @@ img {
 	left: 30%;
 	top: 1.5em;
 	z-index: 600;
+	-webkit-animation: cloud-3 3s ease-in-out infinite alternate;
 	animation: cloud-3 3s ease-in-out infinite alternate;
 }
 
@@ -106,6 +114,7 @@ img {
 	width: 25%;
 	right: 34%;
 	z-index: 500;
+	-webkit-animation: cloud-1 2s ease-in-out infinite alternate;
 	animation: cloud-1 2s ease-in-out infinite alternate;
 }
 
@@ -115,6 +124,7 @@ img {
 	right: 17%;
 	top: 1em;
 	z-index: 200;
+	-webkit-animation: cloud-2 2s ease-in-out infinite alternate;
 	animation: cloud-2 2s ease-in-out infinite alternate;
 }
 
@@ -123,6 +133,7 @@ img {
 	width: 25%;
 	right: 0;
 	z-index: 1;
+	-webkit-animation: cloud-3 3s ease-in-out infinite alternate;
 	animation: cloud-3 3s ease-in-out infinite alternate;
 }
 
@@ -136,6 +147,7 @@ img {
 	top: 1em;
 	left: 12%;
 	z-index: 50;
+	-webkit-animation: light-1 2s ease-in-out infinite alternate;
 	animation: light-1 2s ease-in-out infinite alternate;
 }
 
@@ -145,6 +157,7 @@ img {
 	right: 10%;
 	top: .5em;
 	z-index: 30;
+	-webkit-animation: light-2 2s ease-in-out infinite alternate;
 	animation: light-2 2s ease-in-out infinite alternate;
 }
 
@@ -153,6 +166,7 @@ img {
 	width: 14%;
 	left: 50%;
 	top: 2em;
+	-webkit-animation: light-3 2s ease-in-out infinite alternate;
 	animation: light-3 2s ease-in-out infinite alternate;
 }
 
@@ -161,6 +175,7 @@ img {
 	width: 8%;
 	top: 2.3em;
 	left: 7%;
+	-webkit-animation: light-1 2s ease-in-out infinite alternate;
 	animation: light-1 2s ease-in-out infinite alternate;
 }
 
@@ -170,6 +185,7 @@ img {
 	top: 1em;
 	left: 25%;
 	z-index: 4;
+	-webkit-animation: light-2 2s ease-in-out infinite alternate;
 	animation: light-2 2s ease-in-out infinite alternate;
 }
 
@@ -178,6 +194,7 @@ img {
 	width: 8%;
 	left: 38%;
 	top: 2.5em;
+	-webkit-animation: light-3 3s ease-in-out infinite alternate;
 	animation: light-3 3s ease-in-out infinite alternate;
 }
 
@@ -187,6 +204,7 @@ img {
 	top: 1.5em;
 	right: 44%;
 	z-index: 5;
+	-webkit-animation: light-1 2s ease-in-out infinite alternate;
 	animation: light-1 2s ease-in-out infinite alternate;
 }
 
@@ -195,6 +213,7 @@ img {
 	width: 8%;
 	right: 24%;
 	top: 1.8em;
+	-webkit-animation: light-2 2s ease-in-out infinite alternate;
 	animation: light-2 2s ease-in-out infinite alternate;
 }
 
@@ -203,6 +222,7 @@ img {
 	width: 8%;
 	top: 1em;
 	right: 8%;
+	-webkit-animation: light-3 3s ease-in-out infinite alternate;
 	animation: light-3 3s ease-in-out infinite alternate;
 }
 
@@ -211,6 +231,7 @@ img {
 	margin-bottom: 50%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-animation: title-light 2s ease-in-out infinite alternate;
     animation: title-light 2s ease-in-out infinite alternate;
 }
 
