@@ -116,26 +116,26 @@ body {
 
 .light-1 {
 	position: absolute;
-	width: 10%;
-	top: 1.2em;
-	left: 10%;
+	width: 15%;
+	top: 2.2em;
+	left: 12%;
 	animation: light-1 2s ease-in-out infinite alternate;
 }
 
 .light-2 {
 	position: absolute;
-	width: 18%;
+	width: 14%;
 	right: 10%;
-	top: 1em;
-	animation: cloud-2 2s ease-in-out infinite alternate;
+	top: 1.5em;
+	animation: light-2 2s ease-in-out infinite alternate;
 }
 
 .light-3 {
 	position: absolute;
-	width: 16%;
+	width: 14%;
 	left: 50%;
-	top: 2.5em;
-	animation: cloud-3 3s ease-in-out infinite alternate;
+	top: 3em;
+	animation: light-3 3s ease-in-out infinite alternate;
 }
 
 .light-b-1 {
@@ -237,17 +237,89 @@ body {
 		opacity: 0;
 	}
 
-	33% {
-		opacity: .75;
+	20% {
+		opacity: .8;
 	}
 
-	66% {
-		opacity: .25;
+	40% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 0;
 	}
 
 	100% {
 		transform: translateX(5px);
+		opacity: 0;
+	}
+
+}
+
+@keyframes light-2 {
+
+	0% {
+		transform: translateX(5px);
 		opacity: 1;
+	}
+
+	20% {
+		opacity: .4;
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: .2;
+	}
+
+	80% {
+		opacity: .6;
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 0;
+	}
+
+}
+
+@keyframes light-3 {
+
+	0% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+
+	15% {
+		opacity: .4;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	45% {
+		opacity: .2;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: .8;
+	}
+
+	100% {
+		transform: translateX(5px);
+		opacity: 0;
 	}
 
 }
