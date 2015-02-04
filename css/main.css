@@ -246,7 +246,6 @@ img {
 	animation: rain 1s ease-in-out infinite alternate;
 }
 
-/*
 .earth {
 	height: 50em;
 	background-image: url(..img/earth.svg);
@@ -259,8 +258,6 @@ img {
 	-webkit-transform: rotate(3deg);
 	transform: rotate(3deg);
 }
-
-*/
 
 .arrow {
 	position: absolute;
@@ -485,15 +482,15 @@ img {
 	}
 
 	30% {
-		opacity: 0;
-	}
-
-	45% {
 		opacity: .2;
 	}
 
+	45% {
+		opacity: .4;
+	}
+
 	60% {
-		opacity: 0;
+		opacity: .2;
 	}
 
 	75% {
@@ -501,7 +498,7 @@ img {
 	}
 
 	100% {
-		opacity: 0;
+		opacity: .2;
 	}
 
 }
