@@ -242,7 +242,7 @@ img {
 	left: -2em;
 	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
-  	transform-origin: bottom center;
+  	-webkit-transform-origin: bottom center;
 }
 
 .earth-s-m:hover {
@@ -256,7 +256,7 @@ img {
 	left: -2em;
 	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
-  	transform-origin: bottom center;
+  	-webkit-transform-origin: bottom center;
 }
 
 .earth-l-xl:hover {
@@ -271,7 +271,7 @@ img {
    	margin-left: -2em;
    	-webkit-transform: translateY(-5px);
   	transition: all 1s linear;
-  	transform-origin: bottom center;
+  	-webkit-transform-origin: bottom center;
 }
 
 .arrow:hover {
