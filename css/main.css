@@ -228,10 +228,13 @@ img {
 }
 
 .title {
-	margin-top: 55%;
-	margin-bottom: 50%;
-    margin-left: auto;
-    margin-right: auto;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 30%;
+	width: 80%;
     -webkit-animation: title-light 2s ease-in-out infinite alternate;
     animation: title-light 2s ease-in-out infinite alternate;
 }
@@ -250,8 +253,8 @@ img {
 .earth {
 	position: absolute;
 	left: -10%;
-	bottom: 0;
-	height: 100px;
+	bottom: -5em;
+	height: 220px;
 	width: 120%;
 	background-image: url(../img/earth.svg);
 	background-repeat: repeat-x;
@@ -268,7 +271,7 @@ img {
 .arrow {
 	position: absolute;
    	left: 50%;
-   	bottom: 4em;
+   	bottom: 2em;
    	width: 4em;
    	margin-left: -2em;
    	-webkit-transform: translateY(-10px);
@@ -743,28 +746,31 @@ img {
 		width: 9%;
 		margin-left: 90%;
 	}
-
-	.title {
-		margin-top: 32%;
-		width: 90%
-	}
 	
 	.rain {
 		top: 8em;
 		left: 2.8em;
 	}
 
+	.title {
+		top: 35%;
+		width: 60%;
+	}
+
+	.earth {
+		height: 250px;
+	}
+
 }
 
 @media only screen and (min-width: 38em) {
 
-	.title {
-		margin-top: 28%;
-		width: 70%;
-	}
-
 	.rain {
 		top: 3.5em;
+	}
+
+	.earth {
+		height: 220px;
 	}
 
 }
@@ -772,7 +778,6 @@ img {
 @media only screen and (min-width: 60em) {
 
 	.title {
-		margin-top: 13%;
 		width: 50%;
 	}
 
