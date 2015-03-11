@@ -284,6 +284,20 @@ img {
 	transform: translateY(15px);
 }
 
+.house-good {
+	width: 50%;
+	position: absolute;
+}
+
+.house-bad {
+	width: 50%;
+	opacity: 0;
+}
+
+.houses {
+	position: relative;
+}
+
 @-webkit-keyframes back {
 
 	0% {
