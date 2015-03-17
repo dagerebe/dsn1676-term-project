@@ -34,6 +34,7 @@ img {
 	background-color: rgba(27, 74, 76, 1);
 	height: 100vh;
 	overflow: hidden;
+	z-index: 1;
 	transition: all 1000ms;
 	-webkit-animation: back 2s ease-in-out infinite alternate;
 	animation: back 2s ease-in-out infinite alternate;
@@ -287,47 +288,46 @@ img {
 .house-good {
 	width: 50%;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 .house-bad {
 	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	opacity: 0;
 }
 
 .houses {
+	margin-top: 3em;
 	position: relative;
+	height: 100vh;
 }
 
-@-webkit-keyframes back {
+.tornado {
+	border: none;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
 
-	0% {
-		background-color: rgba(27, 74, 76, .4);
-	}
+.pictornado{
+	width: 30%;
+	position: absolute;
+	left: -20em;
+	top: -25em;
+	transition: all 400ms linear;
+}
 
-	15% {
-		background-color: rgba(27, 74, 76, .8);
-	}
-
-	30% {
-		background-color: rgba(27, 74, 76, 1);
-	}
-
-	45% {
-		background-color: rgba(27, 74, 76, .8);
-	}
-
-	60% {
-		background-color: rgba(27, 74, 76, 1);
-	}
-
-	75% {
-		background-color: rgba(27, 74, 76, .4);
-	}
-
-	100% {
-		background-color: rgba(27, 74, 76, 1);
-	}
-
+.js-tornado-in {
+	top: 1em;
+	-webkit-animation:  tornado-in 4s linear;
+	animation:  tornado-in 4s linear;
 }
 
 @-webkit-keyframes solid {
@@ -753,6 +753,65 @@ img {
 	}
 
 }
+
+
+@-webkit-keyframes tornado-in {
+
+	0% {
+		transform: translateX(100px);
+	}
+
+	20% {
+		transform: translateX(300px);
+	}
+
+	40% {
+		transform: translateX(500px);
+	}
+
+	60% {
+		transform: translateX(700px);
+	}
+
+	80% {
+		transform: translateX(900px);
+	}
+
+	100% {
+		transform: translateX(1100px);
+	}
+
+
+
+@keyframes tornado-in {
+
+	0% {
+		transform: translateX(100px);
+	}
+
+	20% {
+		transform: translateX(300px);
+	}
+
+	40% {
+		transform: translateX(500px);
+	}
+
+	60% {
+		transform: translateX(700px);
+	}
+
+	80% {
+		transform: translateX(900px);
+	}
+
+	100% {
+		transform: translateX(1100px);
+	}
+
+}
+
+
 
 @media only screen and (min-width: 25em) {
 
