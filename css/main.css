@@ -58,6 +58,7 @@ img {
 	max-height: 0;
   	overflow: hidden;
   	transition: all 400ms linear;
+  	position: absolute;
 }
 
 .js-nav-open {
@@ -312,7 +313,7 @@ img {
 	left: 0;
 	right: 0;
 	opacity: 1;
-	transition: all 3s linear;
+	transition: all 2s linear;
 }
 
 .js-house-good {
@@ -326,7 +327,7 @@ img {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	transition: all 3s linear;
+	transition: all 2s linear;
 }
 
 .js-house-bad {
@@ -374,7 +375,7 @@ img {
 	width: 40%;
 	position: absolute;
 	left: -20em;
-	top: -25em;
+	opacity: 1;
 	transition: all 400ms linear;
 }
 
@@ -382,6 +383,10 @@ img {
 	top: 1em;
 	-webkit-animation:  tornado-in 4s linear;
 	animation:  tornado-in 4s linear;
+}
+
+.js-tornado-out {
+	opacity: 0;
 }
 
 .picwave{
@@ -842,27 +847,47 @@ img {
 @keyframes tornado-in {
 
 	0% {
-		left: 2em; top: 5em;
+		left: -4em; top: 1em;
+	}
+
+	10% {
+		left: -1em; top: 2em;
 	}
 
 	20% {
-		left: 4em; top: 4em;
+		left: 3em; top: 1em;
+	}
+
+	30% {
+		left: 6em; top: 3em;
 	}
 
 	40% {
-		left: 6em; top: 5em;
+		left: 5em; top: 2em;
+	}
+
+	50% {
+		left: 9em; top: 3em;
 	}
 
 	60% {
-		left: 8em; top: 4em;
+		left: 8em; top: 1em;
+	}
+
+	70% {
+		left: 13em; top: 3em;
 	}
 
 	80% {
-		left: 10em; top: 5em;
+		left: 18em; top: 2em;
+	}
+
+	90% {
+		left: 22em; top: 1em;
 	}
 
 	100% {
-		left: 12em; top: 4em;
+		left: 25em; top: 3em;
 	}
 
 }

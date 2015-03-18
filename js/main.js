@@ -19,19 +19,39 @@ $toggle.on('click', function () {
 });
 
 $BtnTornado.on('click', function () {
-	$tornado.toggleClass('js-tornado-in');
-	$houseBad.toggleClass('js-house-bad');
-	$houseGood.toggleClass('js-house-good');
+	$tornado.addClass('js-tornado-in');
+	$houseBad.addClass('js-house-bad');
+	$houseGood.addClass('js-house-good');
+});
+
+$tornado.on('animationend', function () {
+	$tornado.addClass('js-tornado-out');
+	$tornado.removeClass('js-tornado-in');
+	$houseBad.removeClass('js-house-bad');
+	$houseGood.removeClass('js-house-good');
 });
 
 $BtnWave.on('click', function () {
-	$wave.toggleClass('js-wave-in');
-	$houseBad.toggleClass('js-house-bad');
-	$houseGood.toggleClass('js-house-good');
+	$wave.addClass('js-wave-in');
+	$houseBad.addClass('js-house-bad');
+	$houseGood.addClass('js-house-good');
 });
 
+$wave.on('animationend', function () {
+	$wave.removeClass('js-wave-in');
+	$houseBad.removeClass('js-house-bad');
+	$houseGood.removeClass('js-house-good');
+});
+
+
 $BtnSnow.on('click', function () {
-	$snow.toggleClass('js-snow-in');
-	$houseBad.toggleClass('js-house-bad');
-	$houseGood.toggleClass('js-house-good');
+	$snow.addClass('js-snow-in');
+	$houseBad.addClass('js-house-bad');
+	$houseGood.addClass('js-house-good');
+});
+
+$snow.on('animationend', function () {
+	$snow.removeClass('js-snow-in');
+	$houseBad.removeClass('js-house-bad');
+	$houseGood.removeClass('js-house-good');
 });
