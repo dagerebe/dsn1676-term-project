@@ -292,6 +292,12 @@ img {
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	opacity: 1;
+	transition: all 3s linear;
+}
+
+.js-house-good {
+	opacity: 0;
 }
 
 .house-bad {
@@ -301,6 +307,11 @@ img {
 	left: 0;
 	right: 0;
 	opacity: 0;
+	transition: all 3s linear;
+}
+
+.js-house-bad {
+	opacity: 1;
 }
 
 .houses {
@@ -316,6 +327,20 @@ img {
 	padding: 1em;
 }
 
+.wave {
+	border: none;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
+.snow {
+	border: none;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
 .pictornado{
 	width: 30%;
 	position: absolute;
@@ -325,6 +350,34 @@ img {
 }
 
 .js-tornado-in {
+	top: 1em;
+	-webkit-animation:  tornado-in 4s linear;
+	animation:  tornado-in 4s linear;
+}
+
+.picwave{
+	width: 30%;
+	position: absolute;
+	left: -20em;
+	top: -25em;
+	transition: all 400ms linear;
+}
+
+.js-wave-in {
+	top: 1em;
+	-webkit-animation:  tornado-in 4s linear;
+	animation:  tornado-in 4s linear;
+}
+
+.picsnow{
+	width: 30%;
+	position: absolute;
+	left: -20em;
+	top: -25em;
+	transition: all 400ms linear;
+}
+
+.js-snow-in {
 	top: 1em;
 	-webkit-animation:  tornado-in 4s linear;
 	animation:  tornado-in 4s linear;
