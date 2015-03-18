@@ -25,7 +25,6 @@ $BtnTornado.on('click', function () {
 });
 
 $tornado.on('animationend', function () {
-	$tornado.addClass('js-tornado-out');
 	$tornado.removeClass('js-tornado-in');
 	$houseBad.removeClass('js-house-bad');
 	$houseGood.removeClass('js-house-good');

@@ -376,7 +376,7 @@ img {
 	position: absolute;
 	left: -20em;
 	opacity: 1;
-	transition: all 400ms linear;
+	
 }
 
 .js-tornado-in {
