@@ -842,27 +842,27 @@ img {
 @keyframes tornado-in {
 
 	0% {
-		transform: translateX(100px);
+		left: 20em; top: 10em;
 	}
 
 	20% {
-		transform: translateX(300px);
+			left: 20em; top: 10em;
 	}
 
 	40% {
-		transform: translateX(500px);
+		left: 20em; top: 10em;
 	}
 
 	60% {
-		transform: translateX(700px);
+		left: 20em; top: 10em;
 	}
 
 	80% {
-		transform: translateX(900px);
+		left: 20em; top: 10em;
 	}
 
 	100% {
-		transform: translateX(1100px);
+		left: 20em; top: 10em;
 	}
 
 }
@@ -942,6 +942,18 @@ img {
 		height: 250px;
 	}
 
+	.houses {
+		height: 25em;
+	}
+
+	.house-good {
+		width: 65%;
+	}
+
+	.house-bad {
+		width: 65%;
+	}
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -952,6 +964,18 @@ img {
 
 	.earth {
 		height: 220px;
+	}
+
+	.houses {
+		height: 30em;
+	}
+
+	.house-good {
+		width: 50%;
+	}
+
+	.house-bad {
+		width: 50%;
 	}
 
 }
@@ -965,6 +989,18 @@ img {
 
 	.rain {
 		top: 4.5em;
+	}
+
+	.houses {
+		height: 30em;
+	}
+
+	.house-good {
+		width: 40%;
+	}
+
+	.house-bad {
+		width: 40%;
 	}
 
 }
