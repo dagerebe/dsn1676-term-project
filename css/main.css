@@ -305,7 +305,7 @@ img {
 }
 
 .house-good {
-	width: 50%;
+	width: 70%;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -320,7 +320,7 @@ img {
 }
 
 .house-bad {
-	width: 50%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -371,7 +371,7 @@ img {
 }
 
 .pictornado{
-	width: 30%;
+	width: 40%;
 	position: absolute;
 	left: -20em;
 	top: -25em;
@@ -385,16 +385,16 @@ img {
 }
 
 .picwave{
-	width: 60%;
+	width: 120%;
 	position: absolute;
-	left: -10em;
+	left: -20em;
 	top: 25em;
 	z-index: 1;
 	transition: all 400ms linear;
 }
 
 .js-wave-in {
-	top: 6em;
+	top: 2em;
 	-webkit-animation:  wave-in 4s linear;
 	animation:  wave-in 4s linear;
 }
@@ -863,6 +863,34 @@ img {
 
 	100% {
 		transform: translateX(1100px);
+	}
+
+}
+
+@keyframes wave-in {
+
+	0% {
+		transform: translateX(50px);
+	}
+
+	20% {
+		transform: translateX(100px);
+	}
+
+	40% {
+		transform: translateX(300px);
+	}
+
+	60% {
+		transform: translateX(500px);
+	}
+
+	80% {
+		transform: translateX(700px);
+	}
+
+	100% {
+		transform: translateX(900px);
 	}
 
 }
