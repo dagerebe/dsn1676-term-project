@@ -335,7 +335,7 @@ img {
 }
 
 .houses {
-	margin-top: 5em;
+	padding-top: 3em;
 	position: relative;
 	height: 20em;
 	overflow: hidden;
@@ -385,9 +385,9 @@ img {
 }
 
 .picwave{
-	width: 120%;
+	width: 200%;
 	position: absolute;
-	left: -30em;
+	left: -40em;
 	z-index: 1;
 }
 
@@ -397,10 +397,16 @@ img {
 }
 
 .picsnow{
-	width: 30%;
+	width: 100%;
 	position: absolute;
 	left: 40em;
-	top: 25em;
+}
+
+.picsnowtwo{
+	width: 100%;
+	position: absolute;
+	top: 10em;
+	left: 30em;
 }
 
 .js-snow-in {
@@ -885,11 +891,12 @@ img {
 @keyframes wave-in {
 
 	0% {
-		left: -15em; top: 8em;
+		left: -30em; top: 8em;
 	}
 
 	50% {
-		left: 1em; top: 3em;
+		transform: scale(1,2);
+		left: -10em; top: 3em;
 	}
 
 	100% {
@@ -901,47 +908,58 @@ img {
 @keyframes snow-in {
 
 	0% {
-		left: -4em; top: 1em;
+		transform: rotate(0deg);
+		left: 20em; top: -15em;
 	}
 
 	10% {
-		left: -1em; top: 2em;
+		transform: rotate(20deg);
+		left: 15em; top: -15em;
 	}
 
 	20% {
-		left: 3em; top: 1em;
+		transform: rotate(0deg);
+		left: 10em; top: -10em;
 	}
 
 	30% {
-		left: 6em; top: 3em;
+		transform: rotate(20deg);
+		left: 5em; top: -10em;
 	}
 
 	40% {
-		left: 5em; top: 2em;
+		transform: rotate(0deg);
+		left: 0em; top: 0em;
 	}
 
 	50% {
-		left: 9em; top: 3em;
+		transform: rotate(20deg);
+		left: -5em; top: 5em;
 	}
 
 	60% {
-		left: 8em; top: 1em;
+		transform: rotate(20deg);
+		left: -10em; top: 10em;
 	}
 
 	70% {
-		left: 13em; top: 3em;
+		transform: rotate(0deg);
+		left: -15em; top: 10em;
 	}
 
 	80% {
-		left: 18em; top: 2em;
+		transform: rotate(20deg);
+		left: -20em; top: 15em;
 	}
 
 	90% {
-		left: 22em; top: 1em;
+		transform: rotate(0deg);
+		left: -25em; top: 15em;
 	}
 
 	100% {
-		left: 25em; top: 3em;
+		transform: rotate(20deg);
+		left: -35em; top: 20em;
 	}
 
 }
