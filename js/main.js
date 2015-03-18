@@ -1,3 +1,6 @@
+var $toggle = $('.toggle')
+var $nav = $('.nav')
+
 var $BtnTornado = $('.tornado')
 var $tornado = $('.pictornado')
 
@@ -10,6 +13,10 @@ var $snow = $('.picsnow')
 var $houseBad = $('.house-bad')
 
 var $houseGood = $('.house-good')
+
+$toggle.on('click', function () {
+	$nav.toggleClass('js-nav-open');
+});
 
 $BtnTornado.on('click', function () {
 	$tornado.toggleClass('js-tornado-in');
