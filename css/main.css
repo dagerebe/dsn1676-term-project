@@ -380,26 +380,18 @@ img {
 }
 
 .js-tornado-in {
-	top: 1em;
 	-webkit-animation:  tornado-in 4s linear;
 	animation:  tornado-in 4s linear;
-}
-
-.js-tornado-out {
-	opacity: 0;
 }
 
 .picwave{
 	width: 120%;
 	position: absolute;
-	left: -20em;
-	top: 25em;
+	left: -30em;
 	z-index: 1;
-	transition: all 400ms linear;
 }
 
 .js-wave-in {
-	top: 2em;
 	-webkit-animation:  wave-in 4s linear;
 	animation:  wave-in 4s linear;
 }
@@ -409,11 +401,9 @@ img {
 	position: absolute;
 	left: 40em;
 	top: 25em;
-	transition: all 400ms linear;
 }
 
 .js-snow-in {
-	top: 1em;
 	-webkit-animation:  snow-in 4s linear;
 	animation:  snow-in 4s linear;
 }
@@ -895,56 +885,63 @@ img {
 @keyframes wave-in {
 
 	0% {
-		transform: translateX(50px);
+		left: -15em; top: 8em;
 	}
 
-	20% {
-		transform: translateX(100px);
-	}
-
-	40% {
-		transform: translateX(300px);
-	}
-
-	60% {
-		transform: translateX(500px);
-	}
-
-	80% {
-		transform: translateX(700px);
+	50% {
+		left: 1em; top: 3em;
 	}
 
 	100% {
-		transform: translateX(900px);
+		left: 15em; top: 8em;
 	}
 
 }
 
-
 @keyframes snow-in {
 
 	0% {
-		transform: translateX(-100px);
+		left: -4em; top: 1em;
+	}
+
+	10% {
+		left: -1em; top: 2em;
 	}
 
 	20% {
-		transform: translateX(-300px);
+		left: 3em; top: 1em;
+	}
+
+	30% {
+		left: 6em; top: 3em;
 	}
 
 	40% {
-		transform: translateX(-500px);
+		left: 5em; top: 2em;
+	}
+
+	50% {
+		left: 9em; top: 3em;
 	}
 
 	60% {
-		transform: translateX(-700px);
+		left: 8em; top: 1em;
+	}
+
+	70% {
+		left: 13em; top: 3em;
 	}
 
 	80% {
-		transform: translateX(-900px);
+		left: 18em; top: 2em;
+	}
+
+	90% {
+		left: 22em; top: 1em;
 	}
 
 	100% {
-		transform: translateX(-1100px);
+		left: 25em; top: 3em;
 	}
 
 }
