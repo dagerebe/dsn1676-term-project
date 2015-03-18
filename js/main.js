@@ -26,8 +26,12 @@ $BtnTornado.on('click', function () {
 
 $BtnWave.on('click', function () {
 	$wave.toggleClass('js-wave-in');
+	$houseBad.toggleClass('js-house-bad');
+	$houseGood.toggleClass('js-house-good');
 });
 
 $BtnSnow.on('click', function () {
 	$snow.toggleClass('js-snow-in');
+	$houseBad.toggleClass('js-house-bad');
+	$houseGood.toggleClass('js-house-good');
 });

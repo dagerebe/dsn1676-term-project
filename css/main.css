@@ -47,7 +47,7 @@ img {
 }
 
 .toggle {
-	width: 12%;
+	width: 3em;
 	margin-left: 85%;
 }
 
@@ -261,7 +261,7 @@ img {
 
 .rain {
 	position: absolute;
-	top: 7em;
+	top: 7.5em;
 	left: 2em;
 	right: 2em;
 	height: 100vh;
@@ -334,9 +334,16 @@ img {
 }
 
 .houses {
-	margin-top: 3em;
+	margin-top: 5em;
 	position: relative;
-	height: 100vh;
+	height: 20em;
+	overflow: hidden;
+}
+
+.buttons {
+	background-color: white;
+	text-align: center;
+	margin: 2em 0;
 }
 
 .tornado {
@@ -344,6 +351,7 @@ img {
 	background-color: black;
 	color: white;
 	padding: 1em;
+	margin: 0 .5em;
 }
 
 .wave {
@@ -351,6 +359,7 @@ img {
 	background-color: black;
 	color: white;
 	padding: 1em;
+	margin: 0 .5em;
 }
 
 .snow {
@@ -358,6 +367,7 @@ img {
 	background-color: black;
 	color: white;
 	padding: 1em;
+	margin: 0 .5em;
 }
 
 .pictornado{
@@ -375,31 +385,32 @@ img {
 }
 
 .picwave{
-	width: 30%;
+	width: 60%;
 	position: absolute;
-	left: -20em;
-	top: -25em;
+	left: -10em;
+	top: 25em;
+	z-index: 1;
 	transition: all 400ms linear;
 }
 
 .js-wave-in {
-	top: 1em;
-	-webkit-animation:  tornado-in 4s linear;
-	animation:  tornado-in 4s linear;
+	top: 6em;
+	-webkit-animation:  wave-in 4s linear;
+	animation:  wave-in 4s linear;
 }
 
 .picsnow{
 	width: 30%;
 	position: absolute;
-	left: -20em;
-	top: -25em;
+	left: 40em;
+	top: 25em;
 	transition: all 400ms linear;
 }
 
 .js-snow-in {
 	top: 1em;
-	-webkit-animation:  tornado-in 4s linear;
-	animation:  tornado-in 4s linear;
+	-webkit-animation:  snow-in 4s linear;
+	animation:  snow-in 4s linear;
 }
 
 @-webkit-keyframes solid {
@@ -827,33 +838,6 @@ img {
 }
 
 
-@-webkit-keyframes tornado-in {
-
-	0% {
-		transform: translateX(100px);
-	}
-
-	20% {
-		transform: translateX(300px);
-	}
-
-	40% {
-		transform: translateX(500px);
-	}
-
-	60% {
-		transform: translateX(700px);
-	}
-
-	80% {
-		transform: translateX(900px);
-	}
-
-	100% {
-		transform: translateX(1100px);
-	}
-
-
 
 @keyframes tornado-in {
 
@@ -884,16 +868,40 @@ img {
 }
 
 
+@keyframes snow-in {
+
+	0% {
+		transform: translateX(-100px);
+	}
+
+	20% {
+		transform: translateX(-300px);
+	}
+
+	40% {
+		transform: translateX(-500px);
+	}
+
+	60% {
+		transform: translateX(-700px);
+	}
+
+	80% {
+		transform: translateX(-900px);
+	}
+
+	100% {
+		transform: translateX(-1100px);
+	}
+
+}
+
+
 
 @media only screen and (min-width: 25em) {
-
-	.toggle {
-		width: 9%;
-		margin-left: 90%;
-	}
 	
 	.rain {
-		top: 8em;
+		top: 9.5em;
 		left: 2.8em;
 	}
 
@@ -921,6 +929,7 @@ img {
 }
 
 @media only screen and (min-width: 60em) {
+
 
 	.title {
 		width: 50%;
