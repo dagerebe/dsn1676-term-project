@@ -52,23 +52,44 @@ img {
 }
 
 .nav {
-	background-color: black;
-	width: 15em;
+	background-color: rgba(27, 74, 76, 1);
+	width: 100%;
 	float: right;
 	max-height: 0;
   	overflow: hidden;
   	transition: all 400ms linear;
+  	left: 0;
   	position: absolute;
+  	z-index: 200;
 }
 
 .js-nav-open {
-  max-height: 15em;
+  	max-height: 14em;
+  	display: block;
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0; 
+} 
+
+.nav li {
+	background-color: rgba(0, 0, 0, .5);
+ 	text-decoration: none;
+ 	list-style: none;
 }
 
 .nav a {
-	color: white;
-	list-style-type: none; 
+	display: block;
 	text-decoration: none;
+  	color: white;
+  	width: 100%;
+  	padding: 1.5em;
+}
+
+.nav a:hover {
+	background-color: rgba(255, 255, 255, .6);
+	color: rgba(0, 0, 0, .8);
 }
 
 .cloud-bunch {
@@ -351,24 +372,27 @@ img {
 	border: none;
 	background-color: black;
 	color: white;
-	padding: 1em;
+	padding: .5em;
 	margin: 0 .5em;
+	font: normal 100%/1.5 'Special Elite',sans-serif;
 }
 
 .wave {
 	border: none;
 	background-color: black;
 	color: white;
-	padding: 1em;
+	padding: .5em;
 	margin: 0 .5em;
+	font: normal 100%/1.5 'Special Elite',sans-serif;
 }
 
 .snow {
 	border: none;
 	background-color: black;
 	color: white;
-	padding: 1em;
+	padding: .5em;
 	margin: 0 .5em;
+	font: normal 100%/1.5 'Special Elite',sans-serif;
 }
 
 .pictornado{
