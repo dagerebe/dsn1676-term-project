@@ -9,7 +9,7 @@ var $wave = $('.picwave')
 
 var $BtnSnow = $('.snow')
 var $snow = $('.picsnow')
-var $snowtwo = $('.picsnowtwo')
+var $snowPile = $('.snowpile')
 
 var $houseBad = $('.house-bad')
 
@@ -46,14 +46,14 @@ $wave.on('animationend', function () {
 
 $BtnSnow.on('click', function () {
 	$snow.addClass('js-snow-in');
-	$snowtwo.addClass('js-snow-in');
+	$snowPile.addClass('js-snowpile-in');
 	$houseBad.addClass('js-house-bad');
 	$houseGood.addClass('js-house-good');
 });
 
 $snow.on('animationend', function () {
 	$snow.removeClass('js-snow-in');
-	$snowtwo.removeClass('js-snow-in');
+	$snowPile.removeClass('js-snowpile-in');
 	$houseBad.removeClass('js-house-bad');
 	$houseGood.removeClass('js-house-good');
 });

@@ -326,6 +326,12 @@ img {
 	transform: translateY(15px);
 }
 
+.house-bg {
+	background-color: rgba(27, 74, 76, .1);
+	height: 100vh;
+	overflow: hidden;
+}
+
 .house-good {
 	width: 70%;
 	position: absolute;
@@ -363,36 +369,51 @@ img {
 }
 
 .buttons {
-	background-color: white;
 	text-align: center;
-	margin: 2em 0;
+	margin-top: 4em;
+	background-color: rgba(27, 74, 76, 1);
 }
 
 .tornado {
 	border: none;
-	background-color: black;
 	color: white;
+	background-color: rgba(27, 74, 76, 1);
 	padding: .5em;
 	margin: 0 .5em;
 	font: normal 100%/1.5 'Special Elite',sans-serif;
+}
+
+.tornado:hover {
+	background-color: rgba(255, 255, 255, .8);
+	color: rgba(27, 74, 76, 1);
 }
 
 .wave {
 	border: none;
-	background-color: black;
+	background-color: rgba(27, 74, 76, 1);
 	color: white;
 	padding: .5em;
 	margin: 0 .5em;
 	font: normal 100%/1.5 'Special Elite',sans-serif;
 }
 
+.wave:hover {
+	background-color: rgba(255, 255, 255, .8);
+	color: rgba(27, 74, 76, 1);
+}
+
 .snow {
 	border: none;
-	background-color: black;
+	background-color: rgba(27, 74, 76, 1);
 	color: white;
 	padding: .5em;
 	margin: 0 .5em;
 	font: normal 100%/1.5 'Special Elite',sans-serif;
+}
+
+.snow:hover {
+	background-color: rgba(255, 255, 255, .8);
+	color: rgba(27, 74, 76, 1);
 }
 
 .pictornado{
@@ -420,17 +441,24 @@ img {
 	animation:  wave-in 4s linear;
 }
 
-.picsnow{
-	width: 100%;
+.picsnow {
+	width: 140%;
 	position: absolute;
-	left: 40em;
+	left: -10em;
+	top: 20em;
 }
 
-.picsnowtwo{
+.snowpile {
 	width: 100%;
 	position: absolute;
-	top: 10em;
-	left: 30em;
+	bottom: -3em;
+	left: -3em;
+	transition: all 4s linear;
+}
+
+.js-snowpile-in {
+	bottom: -.5em;
+	width: 170%;
 }
 
 .js-snow-in {
@@ -932,58 +960,58 @@ img {
 @keyframes snow-in {
 
 	0% {
-		transform: rotate(0deg);
-		left: 20em; top: -15em;
+		opacity: 0;
+		left: -5em; top: -4em;
 	}
 
 	10% {
-		transform: rotate(20deg);
-		left: 15em; top: -15em;
+		opacity: .4;
+		left: -4em; top: -5em;
 	}
 
 	20% {
-		transform: rotate(0deg);
-		left: 10em; top: -10em;
+		opacity: 1;
+		left: -6em; top: -4em;
 	}
 
 	30% {
-		transform: rotate(20deg);
-		left: 5em; top: -10em;
+		opacity: .4;
+		left: -5em; top: -5em;
 	}
 
 	40% {
-		transform: rotate(0deg);
-		left: 0em; top: 0em;
+		opacity: 1;
+		left: -4em; top: -4em;
 	}
 
 	50% {
-		transform: rotate(20deg);
-		left: -5em; top: 5em;
+		opacity: .4;
+		left: -6em; top: -5em;
 	}
 
 	60% {
-		transform: rotate(20deg);
-		left: -10em; top: 10em;
+		opacity: 1;
+		left: -5em; top: -4em;
 	}
 
 	70% {
-		transform: rotate(0deg);
-		left: -15em; top: 10em;
+		opacity: .4;
+		left: -4em; top: -5em;
 	}
 
 	80% {
-		transform: rotate(20deg);
-		left: -20em; top: 15em;
+		opacity: 1;
+		left: -6em; top: -4em;
 	}
 
 	90% {
-		transform: rotate(0deg);
-		left: -25em; top: 15em;
+		opacity: .4;
+		left: -5em; top: -5em;
 	}
 
 	100% {
-		transform: rotate(20deg);
-		left: -35em; top: 20em;
+		opacity: 0;
+		left: -4em; top: -4em;
 	}
 
 }
