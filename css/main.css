@@ -60,7 +60,7 @@ img {
   	transition: all 400ms linear;
   	left: 0;
   	position: absolute;
-  	z-index: 200;
+  	z-index: 1000;
 }
 
 .js-nav-open {
@@ -417,11 +417,10 @@ img {
 }
 
 .pictornado{
-	width: 40%;
+	width: 60%;
 	position: absolute;
 	left: -20em;
-	opacity: 1;
-	
+	z-index: 500;
 }
 
 .js-tornado-in {
@@ -451,12 +450,14 @@ img {
 .snowpile {
 	width: 100%;
 	position: absolute;
-	bottom: -3em;
+	bottom: -4em;
 	left: -3em;
 	transition: all 4s linear;
+	opacity: 0;
 }
 
 .js-snowpile-in {
+	opacity: 1;
 	bottom: -.5em;
 	width: 170%;
 }
@@ -658,6 +659,130 @@ img {
 
 	100% {
 		opacity: .2;
+	}
+
+}
+
+@-webkit-keyframes tornado-in {
+
+	0% {
+		left: -3em; top: 2em;
+	}
+
+	10% {
+		left: 3em; top: 5em;
+	}
+
+	20% {
+		left: 0; top: 4em;
+	}
+
+	30% {
+		left: 6em; top: 3em;
+	}
+
+	40% {
+		left: 5em; top: 5em;
+	}
+
+	50% {
+		left: 6em; top: 4em;
+	}
+
+	60% {
+		left: 8em; top: 5em;
+	}
+
+	70% {
+		left: 10em; top: 5em;
+	}
+
+	80% {
+		left: 15em; top: 4em;
+	}
+
+	90% {
+		left: 13em; top: 3em;
+	}
+
+	100% {
+		left: 20em; top: 2em;
+	}
+
+}
+
+@-webkit-keyframes wave-in {
+
+	0% {
+		left: -40em; top: 8em;
+	}
+
+	40% {
+		transform: scale(1,1.6);
+		left: -20em; top: 3em;
+	}
+
+	100% {
+		left: 15em; top: 8em;
+	}
+
+}
+
+@-webkit-keyframes snow-in {
+
+	0% {
+		opacity: 0;
+		left: -5em; top: -4em;
+	}
+
+	10% {
+		opacity: .4;
+		left: -4em; top: -5em;
+	}
+
+	20% {
+		opacity: 1;
+		left: -6em; top: -4em;
+	}
+
+	30% {
+		opacity: .4;
+		left: -5em; top: -5em;
+	}
+
+	40% {
+		opacity: 1;
+		left: -4em; top: -4em;
+	}
+
+	50% {
+		opacity: .4;
+		left: -6em; top: -5em;
+	}
+
+	60% {
+		opacity: 1;
+		left: -5em; top: -4em;
+	}
+
+	70% {
+		opacity: .4;
+		left: -4em; top: -5em;
+	}
+
+	80% {
+		opacity: 1;
+		left: -6em; top: -4em;
+	}
+
+	90% {
+		opacity: .4;
+		left: -5em; top: -5em;
+	}
+
+	100% {
+		opacity: 0;
+		left: -4em; top: -4em;
 	}
 
 }
@@ -890,20 +1015,18 @@ img {
 
 }
 
-
-
 @keyframes tornado-in {
 
 	0% {
-		left: -4em; top: 1em;
+		left: -3em; top: 2em;
 	}
 
 	10% {
-		left: -1em; top: 2em;
+		left: 3em; top: 5em;
 	}
 
 	20% {
-		left: 3em; top: 1em;
+		left: 0; top: 4em;
 	}
 
 	30% {
@@ -911,31 +1034,31 @@ img {
 	}
 
 	40% {
-		left: 5em; top: 2em;
+		left: 5em; top: 5em;
 	}
 
 	50% {
-		left: 9em; top: 3em;
+		left: 6em; top: 4em;
 	}
 
 	60% {
-		left: 8em; top: 1em;
+		left: 8em; top: 5em;
 	}
 
 	70% {
-		left: 13em; top: 3em;
+		left: 10em; top: 5em;
 	}
 
 	80% {
-		left: 18em; top: 2em;
+		left: 15em; top: 4em;
 	}
 
 	90% {
-		left: 22em; top: 1em;
+		left: 13em; top: 3em;
 	}
 
 	100% {
-		left: 25em; top: 3em;
+		left: 20em; top: 2em;
 	}
 
 }
@@ -943,12 +1066,12 @@ img {
 @keyframes wave-in {
 
 	0% {
-		left: -30em; top: 8em;
+		left: -40em; top: 8em;
 	}
 
-	50% {
-		transform: scale(1,2);
-		left: -10em; top: 3em;
+	40% {
+		transform: scale(1,1.6);
+		left: -20em; top: 3em;
 	}
 
 	100% {
@@ -1017,7 +1140,6 @@ img {
 }
 
 
-
 @media only screen and (min-width: 25em) {
 	
 	.rain {
@@ -1035,7 +1157,8 @@ img {
 	}
 
 	.houses {
-		height: 25em;
+		padding-top: 0; 
+		height: 30em;
 	}
 
 	.house-good {
@@ -1046,6 +1169,23 @@ img {
 		width: 65%;
 	}
 
+	.picwave{
+		left: -65em;
+	}
+
+	.picsnow {
+		left: -10em;
+		top: -60em;
+	}	
+
+	.snowpile {
+		bottom: -7em;
+		left: -3em;
+	}
+
+	.js-snowpile-in {
+		bottom: 0;
+	}
 }
 
 @media only screen and (min-width: 38em) {
