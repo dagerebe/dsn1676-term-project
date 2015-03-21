@@ -452,8 +452,8 @@ img {
 	position: absolute;
 	bottom: -4em;
 	left: -3em;
-	transition: all 4s linear;
 	opacity: 0;
+	transition: all 4s linear;
 }
 
 .js-snowpile-in {
@@ -1203,12 +1203,26 @@ img {
 	}
 
 	.house-good {
-		width: 50%;
+		width: 40%;
 	}
 
 	.house-bad {
-		width: 50%;
+		width: 40%;
 	}
+
+	.pictornado {
+		width: 30%;
+	}
+
+	.picwave{
+		width: 140%;
+		left: -95em;
+	}
+
+	.picsnow {
+		left: -10em;
+		top: -100em;
+	}	
 
 }
 
@@ -1228,11 +1242,25 @@ img {
 	}
 
 	.house-good {
-		width: 40%;
+		width: 30%;
 	}
 
 	.house-bad {
-		width: 40%;
+		width: 30%;
 	}
+
+	.pictornado {
+		width: 25%;
+	}
+
+	.picwave{
+		width: 110%;
+		left: -95em;
+	}
+
+	.picsnow {
+		left: -10em;
+		top: -130em;
+	}	
 
 }
