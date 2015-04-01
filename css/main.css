@@ -300,6 +300,7 @@ img {
 	width: 120%;
 	background-image: url(../img/earth.svg);
 	background-repeat: repeat-x;
+	z-index: 100;
 	-webkit-transform: rotate(-3deg);
   	transition: all 500ms linear;
   	-webkit-transform-origin: bottom center;
@@ -311,11 +312,15 @@ img {
 }
 
 .arrow {
+	background-image: url("../img/arrow.svg");
+	background-repeat: no-repeat;
 	position: absolute;
    	left: 50%;
    	bottom: 2em;
    	width: 4em;
+   	height: 2em;
    	margin-left: -2em;
+   	z-index: 1000;
    	-webkit-transform: translateY(-10px);
   	transition: all 1s linear;
   	-webkit-transform-origin: bottom center;
@@ -372,6 +377,7 @@ img {
 	text-align: center;
 	margin-top: 4em;
 	background-color: rgba(27, 74, 76, 1);
+	position: relative;
 }
 
 .tornado {
@@ -462,6 +468,18 @@ img {
 .js-snow-in {
 	-webkit-animation:  snow-in 4s linear;
 	animation:  snow-in 4s linear;
+}
+
+.up-arrow {
+	background-image: url("../img/up-arrow.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+   	left: 50%;
+   	top: 3em;
+   	width: 4em;
+   	height: 4em;
+   	margin-left: -2em;
+   	z-index: 1000;
 }
 
 @-webkit-keyframes solid {

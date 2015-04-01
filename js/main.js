@@ -57,3 +57,16 @@ $snow.on('animationend', function () {
 	$houseBad.removeClass('js-house-bad');
 	$houseGood.removeClass('js-house-good');
 });
+
+$('.nav').localScroll();
+
+$('.arrow-holder').localScroll();
+
+$('.up-arrow-holder').localScroll();
+
+
+
+
+
+
+
