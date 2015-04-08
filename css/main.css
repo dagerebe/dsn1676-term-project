@@ -470,9 +470,15 @@ img {
 	animation:  snow-in 4s linear;
 }
 
+.svg-group {
+	margin: 1.5em;
+}
+
 #hurricane {
-	-webkit-animation: hurricane-in 1s linear alternate infinite;
-	animation: hurricane-in 1s linear alternate infinite;
+	-webkit-animation: hurricane-in 1s linear infinite;
+	animation: hurricane-in 1s linear infinite;
+	transform-origin: center center;
+	transform(X): 80px;
 }
 
 .up-arrow {
@@ -807,19 +813,18 @@ img {
 
 
 @-webkit-keyframes hurricane-in {
+  
   0% {
     transform: translateX(0);
+    transform: rotate(0deg);
   }
-  30% {
-    transform: translateX(-30px);
-  }
-  80% {
-    transform: translateX(-60px);
-  }
+  
   100% {
     transform: translateX(-100px);
+    transform: rotate(360deg);
   }
 }
+
 
 
 
@@ -1177,17 +1182,15 @@ img {
 }
 
 @keyframes hurricane-in {
+  
   0% {
     transform: translateX(0);
+    transform: rotate(0deg);
   }
-  30% {
-    transform: translateX(-30px);
-  }
-  80% {
-    transform: translateX(-60px);
-  }
+  
   100% {
     transform: translateX(-100px);
+    transform: rotate(360deg);
   }
 }
 
