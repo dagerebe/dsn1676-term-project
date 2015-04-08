@@ -470,6 +470,11 @@ img {
 	animation:  snow-in 4s linear;
 }
 
+#hurricane {
+	-webkit-animation: hurricane-in 1s linear alternate infinite;
+	animation: hurricane-in 1s linear alternate infinite;
+}
+
 .up-arrow {
 	background-image: url("../img/up-arrow.svg");
 	background-repeat: no-repeat;
@@ -798,9 +803,26 @@ img {
 		opacity: 0;
 		left: -5%; top: -45%;
 	}
-
-
 }
+
+
+@-webkit-keyframes hurricane-in {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+
+
 
 @keyframes back {
 
@@ -1153,6 +1175,22 @@ img {
 	}
 
 }
+
+@keyframes hurricane-in {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
 
 
 @media only screen and (min-width: 25em) {
