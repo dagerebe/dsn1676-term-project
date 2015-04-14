@@ -64,7 +64,11 @@ $('.arrow-holder').localScroll();
 
 $('.up-arrow-holder').localScroll();
 
+var $hurricaneMove = $('.svg-group');
 
+$hurricaneMove.waypoint(function () {
+	$hurricaneMove.toggleClass('js-active');
+}, {offset: '65%'});
 
 
 

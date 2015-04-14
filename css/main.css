@@ -475,6 +475,10 @@ img {
 }
 
 #hurricane {
+
+}
+
+.js-active #hurricane {
 	-webkit-animation: hurricane-in 1s linear infinite;
 	animation: hurricane-in 1s linear infinite;
 	transform-origin: center center;
