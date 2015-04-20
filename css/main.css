@@ -376,6 +376,8 @@ img {
 .buttons {
 	text-align: center;
 	margin-top: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	background-color: rgba(27, 74, 76, 1);
 	position: relative;
 }
@@ -470,8 +472,12 @@ img {
 	animation:  snow-in 4s linear;
 }
 
+.map-bg {
+	background-color: rgba(27, 74, 76, .1);
+}
+
 .svg-group {
-	margin: 1.5em;
+	padding: 1.5em;
 }
 
 .js-active #hurricane {
@@ -479,6 +485,13 @@ img {
 	animation: hurricane-in 1s linear infinite;
 	transform-origin: center center;
 	transform(X): 80px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 4em;
+	background-color: rgba(27, 74, 76, 1);
+	position: relative;
 }
 
 .up-arrow {
