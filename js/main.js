@@ -25,7 +25,7 @@ $BtnTornado.on('click', function () {
 	$houseGood.addClass('js-house-good');
 });
 
-$tornado.on('animationend', function () {
+$tornado.on('webkitAnimationEnd animationend', function () {
 	$tornado.removeClass('js-tornado-in');
 	$houseBad.removeClass('js-house-bad');
 	$houseGood.removeClass('js-house-good');
@@ -37,7 +37,7 @@ $BtnWave.on('click', function () {
 	$houseGood.addClass('js-house-good');
 });
 
-$wave.on('animationend', function () {
+$wave.on('webkitAnimationEnd animationend', function () {
 	$wave.removeClass('js-wave-in');
 	$houseBad.removeClass('js-house-bad');
 	$houseGood.removeClass('js-house-good');
@@ -51,7 +51,7 @@ $BtnSnow.on('click', function () {
 	$houseGood.addClass('js-house-good');
 });
 
-$snow.on('animationend', function () {
+$snow.on('webkitAnimationEnd animationend', function () {
 	$snow.removeClass('js-snow-in');
 	$snowPile.removeClass('js-snowpile-in');
 	$houseBad.removeClass('js-house-bad');
