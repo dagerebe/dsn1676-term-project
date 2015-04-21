@@ -484,7 +484,6 @@ img {
 	-webkit-animation: hurricane-in 1s linear infinite;
 	animation: hurricane-in 1s linear infinite;
 	transform-origin: center center;
-	transform(X): 80px;
 }
 
 .footer {
