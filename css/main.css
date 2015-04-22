@@ -48,7 +48,7 @@ img {
 
 .toggle {
 	width: 3em;
-	margin-left: 85%;
+	margin-left: 5%;
 }
 
 .nav {
@@ -331,10 +331,19 @@ img {
 	transform: translateY(15px);
 }
 
-.house-bg {
+.bg {
 	background-color: rgba(27, 74, 76, .1);
-	height: 100vh;
+}
+
+.types-heading {
+	text-align: center;
+	padding-top: 1em;
+	color: rgb(27, 74, 76);
+}
+
+.house-bg {
 	overflow: hidden;
+	height: 100vh;
 }
 
 .house-good {
@@ -375,7 +384,7 @@ img {
 
 .buttons {
 	text-align: center;
-	margin-top: 4em;
+	margin-top: 2em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: rgba(27, 74, 76, 1);
@@ -472,8 +481,10 @@ img {
 	animation:  snow-in 4s linear;
 }
 
-.map-bg {
-	background-color: rgba(27, 74, 76, .1);
+.area-heading {
+	text-align: center;
+	padding-top: 1em;
+	color: rgb(27, 74, 76);
 }
 
 .svg-group {
@@ -488,9 +499,9 @@ img {
 
 .footer {
 	text-align: center;
-	margin-top: 4em;
 	background-color: rgba(27, 74, 76, 1);
 	position: relative;
+	height: 10em;
 }
 
 .up-arrow {
