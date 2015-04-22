@@ -49,6 +49,7 @@ img {
 .toggle {
 	width: 3em;
 	margin-left: 5%;
+	padding-bottom: 1em;
 }
 
 .nav {
@@ -344,6 +345,7 @@ img {
 .house-bg {
 	overflow: hidden;
 	height: 100vh;
+	position: relative;
 }
 
 .house-good {
@@ -388,7 +390,9 @@ img {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	background-color: rgba(27, 74, 76, 1);
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .tornado {
