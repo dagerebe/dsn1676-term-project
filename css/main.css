@@ -498,7 +498,11 @@ img {
 .js-active #hurricane {
 	-webkit-animation: hurricane-in 1s linear infinite;
 	animation: hurricane-in 1s linear infinite;
-	transform-origin: center center;
+	transform-origin: 440px 100px;
+}
+
+.hurricane-wrap {
+	transform: translate(1px, 1px);
 }
 
 .footer {
@@ -518,6 +522,12 @@ img {
    	height: 4em;
    	margin-left: -2em;
    	z-index: 1000;
+}
+
+.my-name {
+	position: absolute;
+	bottom: 0;
+	color: white;
 }
 
 @-webkit-keyframes solid {
